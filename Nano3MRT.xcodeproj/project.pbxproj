@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		386C22142A668C7200141CAC /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22132A668C7200141CAC /* LocationServices.swift */; };
+		386C22192A66907200141CAC /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22182A66907200141CAC /* Station.swift */; };
+		386C221B2A6690C100141CAC /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C221A2A6690C100141CAC /* Navigation.swift */; };
+		386C22212A66919200141CAC /* NavigationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22202A66919200141CAC /* NavigationPoint.swift */; };
+		386C22262A669A4B00141CAC /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22252A669A4B00141CAC /* Enums.swift */; };
+		386C22282A669B4500141CAC /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22272A669B4500141CAC /* Place.swift */; };
+		386C222A2A669FCE00141CAC /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22292A669FCE00141CAC /* Coordinate.swift */; };
+		386C222C2A66A3DD00141CAC /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C222B2A66A3DD00141CAC /* Point.swift */; };
+		386C222F2A66A4FA00141CAC /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C222E2A66A4FA00141CAC /* Array+Extension.swift */; };
+		386C22312A66A50200141CAC /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22302A66A50200141CAC /* Double+Extension.swift */; };
+		386C22332A66A55300141CAC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22322A66A55300141CAC /* Helpers.swift */; };
 		4B1B4AB52A6409FC0083EBC7 /* Nano3MRTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */; };
 		4B1B4AB72A6409FC0083EBC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */; };
 		4B1B4AB92A6409FD0083EBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */; };
@@ -16,7 +26,17 @@
 
 /* Begin PBXFileReference section */
 		386C22132A668C7200141CAC /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
-		386C22152A668D6100141CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		386C22152A668D6100141CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		386C22182A66907200141CAC /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		386C221A2A6690C100141CAC /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		386C22202A66919200141CAC /* NavigationPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPoint.swift; sourceTree = "<group>"; };
+		386C22252A669A4B00141CAC /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		386C22272A669B4500141CAC /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		386C22292A669FCE00141CAC /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		386C222B2A66A3DD00141CAC /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		386C222E2A66A4FA00141CAC /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		386C22302A66A50200141CAC /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		386C22322A66A55300141CAC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		4B1B4AB12A6409FC0083EBC7 /* Nano3MRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano3MRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3MRTApp.swift; sourceTree = "<group>"; };
 		4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +60,8 @@
 			children = (
 				4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */,
 				4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */,
+				386C22152A668D6100141CAC /* Info.plist */,
+				4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -50,6 +72,61 @@
 				386C22132A668C7200141CAC /* LocationServices.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		386C22172A668FCE00141CAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				386C22242A669A3E00141CAC /* Data */,
+				386C22182A66907200141CAC /* Station.swift */,
+				386C221A2A6690C100141CAC /* Navigation.swift */,
+				386C22202A66919200141CAC /* NavigationPoint.swift */,
+				386C22272A669B4500141CAC /* Place.swift */,
+				386C22292A669FCE00141CAC /* Coordinate.swift */,
+				386C222B2A66A3DD00141CAC /* Point.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		386C22242A669A3E00141CAC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				386C22252A669A4B00141CAC /* Enums.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		386C222D2A66A4E500141CAC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				386C222E2A66A4FA00141CAC /* Array+Extension.swift */,
+				386C22302A66A50200141CAC /* Double+Extension.swift */,
+				386C22322A66A55300141CAC /* Helpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		386C22342A66A7E300141CAC /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		386C22352A66A81400141CAC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				386C22172A668FCE00141CAC /* Models */,
+				386C22342A66A7E300141CAC /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		386C22362A66A83100141CAC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		4B1B4AA82A6409FC0083EBC7 = {
@@ -71,10 +148,11 @@
 		4B1B4AB32A6409FC0083EBC7 /* Nano3MRT */ = {
 			isa = PBXGroup;
 			children = (
-				386C22152A668D6100141CAC /* Info.plist */,
 				386C22112A668C1F00141CAC /* App */,
+				386C222D2A66A4E500141CAC /* Utils */,
 				386C22122A668C2B00141CAC /* Services */,
-				4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */,
+				386C22352A66A81400141CAC /* Domain */,
+				386C22362A66A83100141CAC /* Presentation */,
 				4B1B4ABA2A6409FD0083EBC7 /* Preview Content */,
 			);
 			path = Nano3MRT;
@@ -158,9 +236,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386C22212A66919200141CAC /* NavigationPoint.swift in Sources */,
+				386C22332A66A55300141CAC /* Helpers.swift in Sources */,
 				4B1B4AB72A6409FC0083EBC7 /* ContentView.swift in Sources */,
+				386C222F2A66A4FA00141CAC /* Array+Extension.swift in Sources */,
+				386C22312A66A50200141CAC /* Double+Extension.swift in Sources */,
 				386C22142A668C7200141CAC /* LocationServices.swift in Sources */,
+				386C221B2A6690C100141CAC /* Navigation.swift in Sources */,
+				386C22192A66907200141CAC /* Station.swift in Sources */,
+				386C22262A669A4B00141CAC /* Enums.swift in Sources */,
+				386C222C2A66A3DD00141CAC /* Point.swift in Sources */,
 				4B1B4AB52A6409FC0083EBC7 /* Nano3MRTApp.swift in Sources */,
+				386C22282A669B4500141CAC /* Place.swift in Sources */,
+				386C222A2A669FCE00141CAC /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +380,7 @@
 				DEVELOPMENT_TEAM = T84FHM7BL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nano3MRT/Info.plist;
+				INFOPLIST_FILE = Nano3MRT/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,7 +410,7 @@
 				DEVELOPMENT_TEAM = T84FHM7BL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Nano3MRT/Info.plist;
+				INFOPLIST_FILE = Nano3MRT/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
