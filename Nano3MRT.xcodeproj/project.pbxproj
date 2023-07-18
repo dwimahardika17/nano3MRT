@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		386C22142A668C7200141CAC /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22132A668C7200141CAC /* LocationServices.swift */; };
 		4B1B4AB52A6409FC0083EBC7 /* Nano3MRTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */; };
 		4B1B4AB72A6409FC0083EBC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */; };
 		4B1B4AB92A6409FD0083EBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		386C22132A668C7200141CAC /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
+		386C22152A668D6100141CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4B1B4AB12A6409FC0083EBC7 /* Nano3MRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano3MRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3MRTApp.swift; sourceTree = "<group>"; };
 		4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +35,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		386C22112A668C1F00141CAC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */,
+				4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		386C22122A668C2B00141CAC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				386C22132A668C7200141CAC /* LocationServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4B1B4AA82A6409FC0083EBC7 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +71,9 @@
 		4B1B4AB32A6409FC0083EBC7 /* Nano3MRT */ = {
 			isa = PBXGroup;
 			children = (
-				4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */,
-				4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */,
+				386C22152A668D6100141CAC /* Info.plist */,
+				386C22112A668C1F00141CAC /* App */,
+				386C22122A668C2B00141CAC /* Services */,
 				4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */,
 				4B1B4ABA2A6409FD0083EBC7 /* Preview Content */,
 			);
@@ -138,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B1B4AB72A6409FC0083EBC7 /* ContentView.swift in Sources */,
+				386C22142A668C7200141CAC /* LocationServices.swift in Sources */,
 				4B1B4AB52A6409FC0083EBC7 /* Nano3MRTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +289,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano3MRT/Preview Content\"";
+				DEVELOPMENT_TEAM = T84FHM7BL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nano3MRT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,8 +319,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano3MRT/Preview Content\"";
+				DEVELOPMENT_TEAM = T84FHM7BL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nano3MRT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
