@@ -32,6 +32,8 @@
 		4B1B4AB72A6409FC0083EBC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */; };
 		4B1B4AB92A6409FD0083EBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */; };
 		4B1B4ABC2A6409FD0083EBC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B4ABB2A6409FD0083EBC7 /* Preview Assets.xcassets */; };
+		4BE374162A67BADB006D9477 /* DestinationPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE374152A67BADB006D9477 /* DestinationPlan.swift */; };
+		4BE374182A67BD6B006D9477 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE374172A67BD6B006D9477 /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B1B4ABB2A6409FD0083EBC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4BE374152A67BADB006D9477 /* DestinationPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationPlan.swift; sourceTree = "<group>"; };
+		4BE374172A67BD6B006D9477 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			children = (
 				4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */,
 				4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */,
+				4BE374152A67BADB006D9477 /* DestinationPlan.swift */,
+				4BE374172A67BD6B006D9477 /* Route.swift */,
 				386C22152A668D6100141CAC /* Info.plist */,
 				4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */,
 			);
@@ -303,7 +309,9 @@
 				4B1B4AB52A6409FC0083EBC7 /* Nano3MRTApp.swift in Sources */,
 				386C22282A669B4500141CAC /* Place.swift in Sources */,
 				386C222A2A669FCE00141CAC /* Coordinate.swift in Sources */,
+				4BE374162A67BADB006D9477 /* DestinationPlan.swift in Sources */,
 				386C223A2A66B75400141CAC /* TrainRoute.swift in Sources */,
+				4BE374182A67BD6B006D9477 /* Route.swift in Sources */,
 				386C223C2A67443D00141CAC /* Point.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
