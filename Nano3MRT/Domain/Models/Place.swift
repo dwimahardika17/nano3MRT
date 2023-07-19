@@ -7,11 +7,32 @@
 
 import Foundation
 
+/**
+ Represents a point of interest, landmark, or popular destination located outside the train station.
+
+ The `Place` struct encapsulates the attributes and properties associated with a specific location that serves as a point of interest, landmark, or popular destination near a train station.
+
+ Usage:
+    let centralPark = Place(name: "Central Park", coordinate: Coordinate(latitude: 40.7829, longitude: -73.9654))
+
+ - Note: This struct provides a convenient way to store and manage information about places of interest.
+
+ - Important: Each instance of `Place` should have a unique name and valid coordinate values.
+
+ - SeeAlso: `Coordinate`
+ */
 struct Place {
-    let identifier = UUID()
-    let name: String
-    let description: String?
-    let coordinate: Coordinate
+    /// The unique identifier of the place.
+    var identifier = UUID()
+
+    /// The name of the place.
+    var name: String
+
+    /// The description of the place.
+    var description: String?
+
+    /// The geographical coordinate of the place.
+    var coordinate: Coordinate
 }
 
 extension Place: Hashable {
@@ -19,7 +40,7 @@ extension Place: Hashable {
         lhs.name == rhs.name && lhs.coordinate == rhs.coordinate
     }
     
-    public func hash(into hasher: inout Hasher) {
-        return hasher.combine(identifier)
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
     }
 }
