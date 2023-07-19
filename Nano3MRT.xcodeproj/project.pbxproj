@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		386C22142A668C7200141CAC /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22132A668C7200141CAC /* LocationServices.swift */; };
+		386C22192A66907200141CAC /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22182A66907200141CAC /* Station.swift */; };
+		386C221B2A6690C100141CAC /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C221A2A6690C100141CAC /* Navigation.swift */; };
+		386C22212A66919200141CAC /* NavigationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22202A66919200141CAC /* NavigationPoint.swift */; };
+		386C22262A669A4B00141CAC /* GateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22252A669A4B00141CAC /* GateType.swift */; };
+		386C22282A669B4500141CAC /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22272A669B4500141CAC /* Place.swift */; };
+		386C222A2A669FCE00141CAC /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22292A669FCE00141CAC /* Coordinate.swift */; };
+		386C222C2A66A3DD00141CAC /* Gate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C222B2A66A3DD00141CAC /* Gate.swift */; };
+		386C222F2A66A4FA00141CAC /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C222E2A66A4FA00141CAC /* Array+Extension.swift */; };
+		386C22312A66A50200141CAC /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22302A66A50200141CAC /* Double+Extension.swift */; };
+		386C22332A66A55300141CAC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22322A66A55300141CAC /* Helpers.swift */; };
+		386C22382A66ADC200141CAC /* LocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22372A66ADC200141CAC /* LocationUseCase.swift */; };
+		386C223A2A66B75400141CAC /* TrainRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22392A66B75400141CAC /* TrainRoute.swift */; };
+		386C223C2A67443D00141CAC /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C223B2A67443D00141CAC /* Point.swift */; };
+		386C223E2A67451D00141CAC /* TrainStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C223D2A67451D00141CAC /* TrainStop.swift */; };
+		386C22402A67573500141CAC /* DistanceMeasurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C223F2A67573500141CAC /* DistanceMeasurable.swift */; };
+		386C22442A6757D000141CAC /* AreaCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22432A6757D000141CAC /* AreaCategory.swift */; };
+		386C22462A6757EE00141CAC /* AmenityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22452A6757EE00141CAC /* AmenityCategory.swift */; };
+		386C22482A67580E00141CAC /* DirectionIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22472A67580E00141CAC /* DirectionIcon.swift */; };
+		386C224A2A67582200141CAC /* AccessibilityCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22492A67582200141CAC /* AccessibilityCategory.swift */; };
+		386C224C2A6762A600141CAC /* LocationServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C224B2A6762A600141CAC /* LocationServiceDelegate.swift */; };
 		4B1B4AB52A6409FC0083EBC7 /* Nano3MRTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */; };
 		4B1B4AB72A6409FC0083EBC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */; };
 		4B1B4AB92A6409FD0083EBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */; };
@@ -14,6 +35,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		386C22132A668C7200141CAC /* LocationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
+		386C22152A668D6100141CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		386C22182A66907200141CAC /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		386C221A2A6690C100141CAC /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		386C22202A66919200141CAC /* NavigationPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPoint.swift; sourceTree = "<group>"; };
+		386C22252A669A4B00141CAC /* GateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateType.swift; sourceTree = "<group>"; };
+		386C22272A669B4500141CAC /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		386C22292A669FCE00141CAC /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		386C222B2A66A3DD00141CAC /* Gate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gate.swift; sourceTree = "<group>"; };
+		386C222E2A66A4FA00141CAC /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		386C22302A66A50200141CAC /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		386C22322A66A55300141CAC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		386C22372A66ADC200141CAC /* LocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUseCase.swift; sourceTree = "<group>"; };
+		386C22392A66B75400141CAC /* TrainRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainRoute.swift; sourceTree = "<group>"; };
+		386C223B2A67443D00141CAC /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		386C223D2A67451D00141CAC /* TrainStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainStop.swift; sourceTree = "<group>"; };
+		386C223F2A67573500141CAC /* DistanceMeasurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceMeasurable.swift; sourceTree = "<group>"; };
+		386C22432A6757D000141CAC /* AreaCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCategory.swift; sourceTree = "<group>"; };
+		386C22452A6757EE00141CAC /* AmenityCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenityCategory.swift; sourceTree = "<group>"; };
+		386C22472A67580E00141CAC /* DirectionIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionIcon.swift; sourceTree = "<group>"; };
+		386C22492A67582200141CAC /* AccessibilityCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityCategory.swift; sourceTree = "<group>"; };
+		386C224B2A6762A600141CAC /* LocationServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceDelegate.swift; sourceTree = "<group>"; };
 		4B1B4AB12A6409FC0083EBC7 /* Nano3MRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano3MRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3MRTApp.swift; sourceTree = "<group>"; };
 		4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +75,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		386C22112A668C1F00141CAC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */,
+				4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */,
+				386C22152A668D6100141CAC /* Info.plist */,
+				4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		386C22122A668C2B00141CAC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				386C22132A668C7200141CAC /* LocationServices.swift */,
+				386C224B2A6762A600141CAC /* LocationServiceDelegate.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		386C22172A668FCE00141CAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				386C22242A669A3E00141CAC /* Data */,
+				386C22392A66B75400141CAC /* TrainRoute.swift */,
+				386C22182A66907200141CAC /* Station.swift */,
+				386C221A2A6690C100141CAC /* Navigation.swift */,
+				386C22202A66919200141CAC /* NavigationPoint.swift */,
+				386C222B2A66A3DD00141CAC /* Gate.swift */,
+				386C223D2A67451D00141CAC /* TrainStop.swift */,
+				386C22272A669B4500141CAC /* Place.swift */,
+				386C22292A669FCE00141CAC /* Coordinate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		386C22242A669A3E00141CAC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				386C22422A67575C00141CAC /* Enums */,
+				386C22412A67575600141CAC /* Protocols */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		386C222D2A66A4E500141CAC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				386C222E2A66A4FA00141CAC /* Array+Extension.swift */,
+				386C22302A66A50200141CAC /* Double+Extension.swift */,
+				386C22322A66A55300141CAC /* Helpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		386C22342A66A7E300141CAC /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				386C22372A66ADC200141CAC /* LocationUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		386C22352A66A81400141CAC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				386C22172A668FCE00141CAC /* Models */,
+				386C22342A66A7E300141CAC /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		386C22362A66A83100141CAC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		386C22412A67575600141CAC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				386C223B2A67443D00141CAC /* Point.swift */,
+				386C223F2A67573500141CAC /* DistanceMeasurable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		386C22422A67575C00141CAC /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				386C22432A6757D000141CAC /* AreaCategory.swift */,
+				386C22452A6757EE00141CAC /* AmenityCategory.swift */,
+				386C22472A67580E00141CAC /* DirectionIcon.swift */,
+				386C22492A67582200141CAC /* AccessibilityCategory.swift */,
+				386C22252A669A4B00141CAC /* GateType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		4B1B4AA82A6409FC0083EBC7 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +194,11 @@
 		4B1B4AB32A6409FC0083EBC7 /* Nano3MRT */ = {
 			isa = PBXGroup;
 			children = (
-				4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */,
-				4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */,
-				4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */,
+				386C22112A668C1F00141CAC /* App */,
+				386C222D2A66A4E500141CAC /* Utils */,
+				386C22122A668C2B00141CAC /* Services */,
+				386C22352A66A81400141CAC /* Domain */,
+				386C22362A66A83100141CAC /* Presentation */,
 				4B1B4ABA2A6409FD0083EBC7 /* Preview Content */,
 			);
 			path = Nano3MRT;
@@ -137,8 +282,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386C224C2A6762A600141CAC /* LocationServiceDelegate.swift in Sources */,
+				386C22482A67580E00141CAC /* DirectionIcon.swift in Sources */,
+				386C223E2A67451D00141CAC /* TrainStop.swift in Sources */,
+				386C22212A66919200141CAC /* NavigationPoint.swift in Sources */,
+				386C22332A66A55300141CAC /* Helpers.swift in Sources */,
 				4B1B4AB72A6409FC0083EBC7 /* ContentView.swift in Sources */,
+				386C222F2A66A4FA00141CAC /* Array+Extension.swift in Sources */,
+				386C22462A6757EE00141CAC /* AmenityCategory.swift in Sources */,
+				386C22382A66ADC200141CAC /* LocationUseCase.swift in Sources */,
+				386C22312A66A50200141CAC /* Double+Extension.swift in Sources */,
+				386C22142A668C7200141CAC /* LocationServices.swift in Sources */,
+				386C22442A6757D000141CAC /* AreaCategory.swift in Sources */,
+				386C221B2A6690C100141CAC /* Navigation.swift in Sources */,
+				386C22192A66907200141CAC /* Station.swift in Sources */,
+				386C22262A669A4B00141CAC /* GateType.swift in Sources */,
+				386C224A2A67582200141CAC /* AccessibilityCategory.swift in Sources */,
+				386C22402A67573500141CAC /* DistanceMeasurable.swift in Sources */,
+				386C222C2A66A3DD00141CAC /* Gate.swift in Sources */,
 				4B1B4AB52A6409FC0083EBC7 /* Nano3MRTApp.swift in Sources */,
+				386C22282A669B4500141CAC /* Place.swift in Sources */,
+				386C222A2A669FCE00141CAC /* Coordinate.swift in Sources */,
+				386C223A2A66B75400141CAC /* TrainRoute.swift in Sources */,
+				386C223C2A67443D00141CAC /* Point.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +433,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano3MRT/Preview Content\"";
+				DEVELOPMENT_TEAM = T84FHM7BL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nano3MRT/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,8 +463,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano3MRT/Preview Content\"";
+				DEVELOPMENT_TEAM = T84FHM7BL8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nano3MRT/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
