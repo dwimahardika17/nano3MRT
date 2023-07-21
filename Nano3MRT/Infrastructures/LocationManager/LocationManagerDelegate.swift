@@ -1,5 +1,5 @@
 //
-//  LocationServiceDelegate.swift
+//  LocationManagerDelegate.swift
 //  Nano3MRT
 //
 //  Created by Muhammad Rizki Ardyan on 19/07/23.
@@ -10,14 +10,13 @@ import CoreLocation
 /**
  A delegate protocol for receiving location service updates.
 
- The `LocationServiceDelegate` protocol defines methods that a delegate can implement to receive updates related to location services, such as changes in authorization status and new location updates.
+ The `LocationManagerDelegate` protocol defines methods that a delegate can implement to receive updates related to location services, such as changes in authorization status and new location updates.
 
  Usage:
-    class MyViewController: UIViewController, LocationServiceDelegate {
-        let locationService = LocationService()
+    class MyClass: LocationManagerDelegate {
+        let locationService = LocationManager()
         
-        override func viewDidLoad() {
-            super.viewDidLoad()
+        init() {
             locationService.delegate = self
         }
 
@@ -31,11 +30,11 @@ import CoreLocation
         }
     }
 
- - Note: The `LocationServiceDelegate` protocol relies on the CoreLocation framework.
+ - Note: The `LocationManagerDelegate` protocol relies on the CoreLocation framework.
 
- - SeeAlso: `LocationService`
+ - SeeAlso: `LocationManager`
  */
-protocol LocationServiceDelegate: AnyObject {
+protocol LocationManagerDelegate: AnyObject {
     /**
      Notifies the delegate that the authorization status has changed.
 

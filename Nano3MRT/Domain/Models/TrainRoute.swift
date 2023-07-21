@@ -47,7 +47,7 @@ struct TrainRoute: Identifiable {
      - Parameter station: The station for which to retrieve the train stop.
      - Returns: The train stop associated with the specified station, if found.
      */
-    func getTrainStop(in station: Station) -> TrainStop? {
+    func trainStop(in station: Station) -> TrainStop? {
         station.trainStops.first { $0.trainRouteId == id }
     }
 }

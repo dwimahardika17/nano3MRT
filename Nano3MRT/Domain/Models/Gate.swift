@@ -17,15 +17,21 @@ import Foundation
 
  - Note: This struct serves as a representation of a gate within a station.
 
- - SeeAlso: `Point`, `AccessibilityCategory`, `Coordinate`, `Place`, `AmenityCategory`, `GateType`
+ - SeeAlso: `Point`, `AccessibilityCategory`, `Coordinate`, `Place`, `FacilityCategory`, `GateType`
  */
 struct Gate: Point {
     
     /// The name of the gate.
     var name: String
     
+    /// The alternative name of the gate.
+    var altName: String
+    
+    /// The description of the gate.
+    var description: String
+    
     /// The accessibility category of the gate.
-    var accessibility: AccessibilityCategory
+    var accessibility: AccessibilityCategory?
     
     /// The coordinates of the gate.
     var coordinate: Coordinate?
@@ -33,8 +39,8 @@ struct Gate: Point {
     /// The nearby places around the gate.
     var nearbyPlaces: [Place]
     
-    /// The amenity category of the gate. Default value is `.gate`.
-    var amenity: AmenityCategory? = .gate
+    /// The facility category of the gate. Default value is `.gate`.
+    var facilities: [FacilityCategory]
     
     /// The URLs of the gate's images.
     var imageUrls: [URL]

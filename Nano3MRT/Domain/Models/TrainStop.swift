@@ -19,23 +19,20 @@ import Foundation
 
  - Important: Each instance of `TrainStop` should have a valid name, accessibility category, and train route ID.
 
- - SeeAlso: `Point`, `AccessibilityCategory`, `Coordinate`, `Place`, `AmenityCategory`
+ - SeeAlso: `Point`, `AccessibilityCategory`, `Coordinate`, `Place`, `FacilityCategory`
  */
 struct TrainStop: Point {
     /// The name of the train stop or station.
     var name: String
     
     /// The accessibility category of the train stop or station.
-    var accessibility: AccessibilityCategory
+    var accessibility: AccessibilityCategory?
     
     /// The coordinates of the train stop or station.
     var coordinate: Coordinate?
     
     /// The nearby places around the train stop or station.
     var nearbyPlaces: [Place]
-    
-    /// The amenity category of the train stop or station. Default value is `.trainStop`.
-    var amenity: AmenityCategory? = .trainStop
     
     /// The URLs of the train stop or station's images.
     var imageUrls: [URL]

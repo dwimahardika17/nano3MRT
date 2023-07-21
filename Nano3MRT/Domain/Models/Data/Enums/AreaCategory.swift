@@ -19,7 +19,7 @@ import Foundation
 
  - SeeAlso: `TrackDirection`
  */
-enum AreaCategory {
+enum AreaCategory: String {
     /// The area category represents a platform.
     case platform
     

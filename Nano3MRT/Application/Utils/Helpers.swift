@@ -27,6 +27,6 @@ struct Helpers {
     }
     
     static func createCoordinateFromCL(_ clCoordinate: CLLocationCoordinate2D) -> Coordinate {
-        Coordinate(longitude: clCoordinate.longitude, latitude: clCoordinate.latitude)
+        Coordinate(latitude: clCoordinate.latitude, longitude: clCoordinate.longitude)
     }
 }

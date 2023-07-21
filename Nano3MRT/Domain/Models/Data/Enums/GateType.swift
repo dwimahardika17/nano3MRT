@@ -19,7 +19,7 @@ import Foundation
 
  - SeeAlso: `AccessibilityCategory`
  */
-enum GateType {
+enum GateType: String {
     /// The gate type represents an entrance.
     case entrance
     
