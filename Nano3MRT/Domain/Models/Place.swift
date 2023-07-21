@@ -8,9 +8,9 @@
 import Foundation
 
 /**
- Represents a point of interest, landmark, or popular destination located outside the train station.
+ Represents a point of interest, landmark, or popular destination located outside or inside the train station.
 
- The `Place` struct encapsulates the attributes and properties associated with a specific location that serves as a point of interest, landmark, or popular destination near a train station.
+ The `Place` struct encapsulates the attributes and properties associated with a specific location that serves as a point of interest, landmark, or popular destination near and in a train station.
 
  Usage:
     let centralPark = Place(name: "Central Park", coordinate: Coordinate(latitude: 40.7829, longitude: -73.9654))
@@ -21,9 +21,9 @@ import Foundation
 
  - SeeAlso: `Coordinate`
  */
-struct Place {
+struct Place: Identifiable {
     /// The unique identifier of the place.
-    var identifier = UUID()
+    var id = UUID()
 
     /// The name of the place.
     var name: String
@@ -41,6 +41,6 @@ extension Place: Hashable {
     }
     
     func hash(into hasher: inout Hasher) {
-        hasher.combine(identifier)
+        hasher.combine(id)
     }
 }

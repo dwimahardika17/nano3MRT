@@ -28,6 +28,9 @@ struct Navigation {
     /// The train stop as the destination of navigation or vice versa.
     var trainStop: TrainStop
     
+    var accessibility: AccessibilityCategory?
+    
     /// The sequence of navigation steps between the gate and train stop.
     var steps: [NavigationPoint]
+    
 }

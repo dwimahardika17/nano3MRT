@@ -22,23 +22,12 @@ import Foundation
  - SeeAlso: `CLLocationCoordinate2D`
  */
 struct Coordinate {
-    /// The longitude value of the coordinate.
-    var longitude: Double
-    
     /// The latitude value of the coordinate.
     var latitude: Double
     
-    /**
-     Initializes a new instance of `Coordinate` with the given longitude and latitude values.
-     
-     - Parameters:
-     - longitude: The longitude value of the coordinate.
-     - latitude: The latitude value of the coordinate.
-     */
-    init(longitude: Double, latitude: Double) {
-        self.longitude = longitude
-        self.latitude = latitude
-    }
+    /// The longitude value of the coordinate.
+    var longitude: Double
+    
 }
 
 extension Coordinate: Equatable {}

@@ -19,6 +19,10 @@ import Foundation
 
  - SeeAlso: `GateType`
  */
-enum AccessibilityCategory {
-    // Add additional accessibility options as needed.
+enum AccessibilityCategory: String, Equatable {
+    /// The accessibility for wheelchair.
+    case wheelchair
+    
+    /// The accessibility for bicycle.
+    case bicycle
 }

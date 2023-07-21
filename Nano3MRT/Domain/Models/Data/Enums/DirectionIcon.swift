@@ -19,7 +19,7 @@ import Foundation
 
  - SeeAlso: `AccessibilityCategory`
  */
-enum DirectionIcon {
+enum DirectionIcon: String {
     /// The direction icon represents the head direction.
     case head
     

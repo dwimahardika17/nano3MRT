@@ -19,7 +19,7 @@ import Foundation
 
  - Important: Each instance of `NavigationPoint` should have a valid name and accessibility category.
 
- - SeeAlso: `Point`, `AccessibilityCategory`, `Coordinate`, `Place`, `AmenityCategory`, `DirectionIcon`
+ - SeeAlso: `Point`, `AccessibilityCategory`, `Coordinate`, `Place`, `FacilityCategory`, `DirectionIcon`
  */
 struct NavigationPoint: Point {
     /// The name of the navigation point.
@@ -29,7 +29,7 @@ struct NavigationPoint: Point {
     var description: String?
     
     /// The accessibility category of the navigation point.
-    var accessibility: AccessibilityCategory
+    var accessibility: AccessibilityCategory?
     
     /// The coordinates of the navigation point.
     var coordinate: Coordinate?
@@ -37,8 +37,8 @@ struct NavigationPoint: Point {
     /// The nearby places around the navigation point.
     var nearbyPlaces: [Place]
     
-    /// The amenity category of the navigation point.
-    var amenity: AmenityCategory?
+    /// The facility category of the navigation point.
+    var facility: FacilityCategory?
     
     /// The URLs of the navigation point's images.
     var imageUrls: [URL]
