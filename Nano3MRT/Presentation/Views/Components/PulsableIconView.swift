@@ -24,10 +24,10 @@ struct PulsableIconView: View {
                 .animation(.easeIn, value: isEditing)
             
             Group {
-                Circle().fill(color.opacity(0.25)).frame(width: 35, height: 40).scaleEffect(animate ? 1 : 0)
-                Circle().fill(color.opacity(0.35)).frame(width: 30, height: 30).scaleEffect(animate ? 1 : 0)
-                Circle().fill(color.opacity(0.45)).frame(width: 25, height: 15).scaleEffect(animate ? 1 : 0)
-                Circle().fill(color).frame(width: 15, height: 6.25)
+                Circle().fill(color.opacity(0.25)).frame(height: 40).scaleEffect(animate ? 1 : 0)
+                Circle().fill(color.opacity(0.35)).frame(height: 30).scaleEffect(animate ? 1 : 0)
+                Circle().fill(color.opacity(0.45)).frame(height: 15).scaleEffect(animate ? 1 : 0)
+                Circle().fill(color).frame(height: 6.25)
             }
             .opacity(isEditing ? 1 : 0)
             

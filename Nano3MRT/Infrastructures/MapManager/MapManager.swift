@@ -18,21 +18,21 @@ protocol MapManager: AnyObject {
     
     /// The delegate to receive map manager events.
     var delegate: T? { get set }
-
+    
     /**
      Initiates a search based on the provided query.
      
      - Parameter query: The search query for locations.
-    */
+     */
     func searchCompleter(for query: String)
-
+    
     /**
      Opens the map application with directions to the specified coordinate.
      
      - Parameters:
-        - coordinate: The coordinate to open directions for.
-        - mode: The mode of transportation for directions (walk or driving).
-    */
+     - coordinate: The coordinate to open directions for.
+     - mode: The mode of transportation for directions (walk or driving).
+     */
     func openDirectionInMap(coordinate: Coordinate, mode: DirectionMode)
 }
 
@@ -43,40 +43,63 @@ protocol MapManager: AnyObject {
 class DefaultMapManager<T>: NSObject, MapManager, MKLocalSearchCompleterDelegate where T: MapManagerDelegate {
     
     /// The search completer used for location searches.
-    private let searchCompleter: MKLocalSearchCompleter
-
+    private var searchCompleter: MKLocalSearchCompleter?
+    
     /// The delegate to receive map manager events.
     weak var delegate: T?
-
+    
     /**
      Initializes a DefaultMapManager instance with an optional MKLocalSearchCompleter.
      If not provided, a default completer will be used.
      
      - Parameter searchCompleter: The MKLocalSearchCompleter to use for location searches.
-                                 (Default: MKLocalSearchCompleter())
-    */
-    init(searchCompleter: MKLocalSearchCompleter = MKLocalSearchCompleter()) {
-        self.searchCompleter = searchCompleter
+     (Default: MKLocalSearchCompleter())
+     */
+    init(searchCompleter: MKLocalSearchCompleter? = nil) {
+        if let searchCompleter {
+            self.searchCompleter = searchCompleter
+        }
         super.init()
-        self.searchCompleter.delegate = self
+        self.searchCompleter?.delegate = self
     }
-
+    
     /**
      Initiates a search based on the provided query.
      
      - Parameter query: The search query for locations.
-    */
+     */
     func searchCompleter(for query: String) {
-        self.searchCompleter.queryFragment = query
+        self.searchCompleter?.queryFragment = query
     }
-
+    
+    /**
+     Initiates a search based on the provided query.
+     
+     - Parameter query: The search query for locations.
+     */
+    func searchForLocation(_ query: String, region: MKCoordinateRegion? = nil, completion: @escaping (_ mapItems: [MKMapItem]) -> Void) {
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = query
+        if let region {
+            request.region = region
+        }
+        let search = MKLocalSearch(request: request)
+        
+        search.start { response, _ in
+            guard let response else {
+                return
+            }
+            completion(response.mapItems)
+        }
+    }
+    
     /**
      Opens the map application with directions to the specified coordinate.
      
      - Parameters:
-        - coordinate: The coordinate to open directions for.
-        - mode: The mode of transportation for directions (walk or driving).
-    */
+     - coordinate: The coordinate to open directions for.
+     - mode: The mode of transportation for directions (walk or driving).
+     */
     func openDirectionInMap(coordinate: Coordinate, mode: DirectionMode) {
         let directionMode: String
         switch mode {
@@ -85,7 +108,7 @@ class DefaultMapManager<T>: NSObject, MapManager, MKLocalSearchCompleterDelegate
         case .driving:
             directionMode = MKLaunchOptionsDirectionsModeDriving
         }
-
+        
         let placemark = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude))
         let mapItem = MKMapItem(placemark: placemark)
         let launchOptions = [MKLaunchOptionsDirectionsModeKey: directionMode]
@@ -96,7 +119,7 @@ class DefaultMapManager<T>: NSObject, MapManager, MKLocalSearchCompleterDelegate
         guard let completer = completer.results as? T.MapManagerSearchResult else { return }
         delegate?.didUpdateResults(searchResults: completer)
     }
-    
+
     func completer(_ completer: MKLocalSearchCompleter, didFailWithError error: Error) {
         delegate?.didFailWithError(error)
     }
