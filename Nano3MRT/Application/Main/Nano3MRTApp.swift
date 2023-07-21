@@ -11,7 +11,7 @@ import SwiftUI
 struct Nano3MRTApp: App {
     var body: some Scene {
         WindowGroup {
-            StartTripScreenView()
+            ContentView()
         }
     }
 }
