@@ -16,8 +16,18 @@ struct InlineTextFieldView: View {
     
     let onEditing: (_ isEditing: Bool) -> Void
     
+    let onSubmit: () -> Void = {}
+    
+    func ownOnSubmit() {
+        onSubmit()
+        isFocused.toggle()
+    }
+    
+    @FocusState private var isFocused: Bool
+    
     var body: some View {
-        CustomTextField(text: $text, placeholder: placeholder, isFirstResponder: isFirstResponder, onEditing: onEditing)
+        CustomTextField(text: $text, placeholder: placeholder, isFirstResponder: isFirstResponder, onEditing: onEditing, onSubmit: ownOnSubmit)
+            .focused($isFocused)
         .font(.system(size: 16))
         .frame(height: 22)
         .padding(.vertical)
