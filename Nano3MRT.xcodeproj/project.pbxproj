@@ -32,6 +32,7 @@
 		4B1B4AB72A6409FC0083EBC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */; };
 		4B1B4AB92A6409FD0083EBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */; };
 		4B1B4ABC2A6409FD0083EBC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B4ABB2A6409FD0083EBC7 /* Preview Assets.xcassets */; };
+<<<<<<< Updated upstream
 		4BE374162A67BADB006D9477 /* DestinationPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE374152A67BADB006D9477 /* DestinationPlan.swift */; };
 		4BE374182A67BD6B006D9477 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE374172A67BD6B006D9477 /* Route.swift */; };
 		4BE3741C2A6A1752006D9477 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE3741B2A6A1752006D9477 /* Style.swift */; };
@@ -45,6 +46,12 @@
 		4BE3745A2A6A3746006D9477 /* StartTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE374532A6A3746006D9477 /* StartTripView.swift */; };
 		4BE3745C2A6A5D3F006D9477 /* PlanCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE3745B2A6A5D3F006D9477 /* PlanCard.swift */; };
 		4BE374642A6A74EF006D9477 /* CircleFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE374632A6A74EF006D9477 /* CircleFill.swift */; };
+=======
+		4BE374682A6A835E006D9477 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE374672A6A835E006D9477 /* Style.swift */; };
+		4BE3746A2A6A837B006D9477 /* AutoSlideScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE374692A6A837B006D9477 /* AutoSlideScrollView.swift */; };
+		4BE3746C2A6A8398006D9477 /* PlanCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE3746B2A6A8398006D9477 /* PlanCard.swift */; };
+		4BE3746E2A6A83AA006D9477 /* CircleFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE3746D2A6A83AA006D9477 /* CircleFill.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +82,7 @@
 		4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B1B4ABB2A6409FD0083EBC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		4BE374152A67BADB006D9477 /* DestinationPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationPlan.swift; sourceTree = "<group>"; };
 		4BE374172A67BD6B006D9477 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		4BE3741B2A6A1752006D9477 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
@@ -88,6 +96,12 @@
 		4BE374532A6A3746006D9477 /* StartTripView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartTripView.swift; sourceTree = "<group>"; };
 		4BE3745B2A6A5D3F006D9477 /* PlanCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCard.swift; sourceTree = "<group>"; };
 		4BE374632A6A74EF006D9477 /* CircleFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleFill.swift; sourceTree = "<group>"; };
+=======
+		4BE374672A6A835E006D9477 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		4BE374692A6A837B006D9477 /* AutoSlideScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSlideScrollView.swift; sourceTree = "<group>"; };
+		4BE3746B2A6A8398006D9477 /* PlanCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCard.swift; sourceTree = "<group>"; };
+		4BE3746D2A6A83AA006D9477 /* CircleFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleFill.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +222,117 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
+=======
+		386C22522A67A42600141CAC /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				386C22532A67A43000141CAC /* LocationRepository.swift */,
+				386C22592A67ACB500141CAC /* StationRepository.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		386C225B2A68C8DC00141CAC /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				386C22132A668C7200141CAC /* LocationManager.swift */,
+				386C224B2A6762A600141CAC /* LocationManagerDelegate.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		386C225C2A68C8E300141CAC /* MapManager */ = {
+			isa = PBXGroup;
+			children = (
+				386C225D2A68C8EF00141CAC /* MapManager.swift */,
+				386C225F2A68C92000141CAC /* MapManagerDelegate.swift */,
+			);
+			path = MapManager;
+			sourceTree = "<group>";
+		};
+		386C22612A68EC2A00141CAC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				386C22682A6947CB00141CAC /* Repository */,
+				386C22672A6947C600141CAC /* Sources */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		386C22642A68EE2600141CAC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				386C22112A668C1F00141CAC /* Main */,
+				386C222D2A66A4E500141CAC /* Utils */,
+				386C22652A68EE3200141CAC /* Resources */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		386C22652A68EE3200141CAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		386C22662A68F2AC00141CAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				386C226F2A6990B900141CAC /* Components */,
+				386C22832A6A464B00141CAC /* DestinationPlan.swift */,
+				4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */,
+				386C22842A6A464B00141CAC /* Route.swift */,
+				386C226D2A694E8F00141CAC /* StartTripScreenView.swift */,
+				4BE374672A6A835E006D9477 /* Style.swift */,
+				4BE374692A6A837B006D9477 /* AutoSlideScrollView.swift */,
+				4BE3746B2A6A8398006D9477 /* PlanCard.swift */,
+				4BE3746D2A6A83AA006D9477 /* CircleFill.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		386C22672A6947C600141CAC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				386C22622A68EC4700141CAC /* BundleDataSource.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		386C22682A6947CB00141CAC /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				386C22692A694DDB00141CAC /* DefaultLocationRepository.swift */,
+				386C226B2A694DFE00141CAC /* DefaultStationRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		386C226F2A6990B900141CAC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				386C22702A6990D900141CAC /* InlineTextFieldView.swift */,
+				386C22722A6990EB00141CAC /* NavigationVDevider.swift */,
+				386C22762A69912200141CAC /* CustomTextField.swift */,
+				386C22782A69913800141CAC /* PulsableIconView.swift */,
+				386C22742A69910500141CAC /* StartTripView.swift */,
+				386C227A2A69914B00141CAC /* HomeView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		386C227C2A69A6D600141CAC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				386C227D2A69A6FA00141CAC /* StartTripViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+>>>>>>> Stashed changes
 		4B1B4AA82A6409FC0083EBC7 = {
 			isa = PBXGroup;
 			children = (
@@ -360,11 +485,20 @@
 				4BE374562A6A3746006D9477 /* HomeView.swift in Sources */,
 				386C22262A669A4B00141CAC /* GateType.swift in Sources */,
 				386C224A2A67582200141CAC /* AccessibilityCategory.swift in Sources */,
+				4BE3746C2A6A8398006D9477 /* PlanCard.swift in Sources */,
 				386C22402A67573500141CAC /* DistanceMeasurable.swift in Sources */,
 				4BE374572A6A3746006D9477 /* CustomTextField.swift in Sources */,
 				386C222C2A66A3DD00141CAC /* Gate.swift in Sources */,
+				4BE374682A6A835E006D9477 /* Style.swift in Sources */,
+				4BE3746E2A6A83AA006D9477 /* CircleFill.swift in Sources */,
 				4B1B4AB52A6409FC0083EBC7 /* Nano3MRTApp.swift in Sources */,
+<<<<<<< Updated upstream
 				4BE3745C2A6A5D3F006D9477 /* PlanCard.swift in Sources */,
+=======
+				386C22632A68EC4700141CAC /* BundleDataSource.swift in Sources */,
+				386C22732A6990EB00141CAC /* NavigationVDevider.swift in Sources */,
+				4BE3746A2A6A837B006D9477 /* AutoSlideScrollView.swift in Sources */,
+>>>>>>> Stashed changes
 				386C22282A669B4500141CAC /* Place.swift in Sources */,
 				386C222A2A669FCE00141CAC /* Coordinate.swift in Sources */,
 				4BE374162A67BADB006D9477 /* DestinationPlan.swift in Sources */,
