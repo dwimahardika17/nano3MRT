@@ -47,6 +47,8 @@
 		386C22792A69913800141CAC /* PulsableIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22782A69913800141CAC /* PulsableIconView.swift */; };
 		386C227B2A69914B00141CAC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C227A2A69914B00141CAC /* HomeView.swift */; };
 		386C227E2A69A6FA00141CAC /* StartTripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C227D2A69A6FA00141CAC /* StartTripViewModel.swift */; };
+		386C22852A6A464B00141CAC /* DestinationPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22832A6A464B00141CAC /* DestinationPlan.swift */; };
+		386C22862A6A464B00141CAC /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C22842A6A464B00141CAC /* Route.swift */; };
 		4B1B4AB52A6409FC0083EBC7 /* Nano3MRTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */; };
 		4B1B4AB72A6409FC0083EBC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */; };
 		4B1B4AB92A6409FD0083EBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B4AB82A6409FD0083EBC7 /* Assets.xcassets */; };
@@ -95,6 +97,8 @@
 		386C22782A69913800141CAC /* PulsableIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsableIconView.swift; sourceTree = "<group>"; };
 		386C227A2A69914B00141CAC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		386C227D2A69A6FA00141CAC /* StartTripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTripViewModel.swift; sourceTree = "<group>"; };
+		386C22832A6A464B00141CAC /* DestinationPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationPlan.swift; sourceTree = "<group>"; };
+		386C22842A6A464B00141CAC /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		4B1B4AB12A6409FC0083EBC7 /* Nano3MRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano3MRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1B4AB42A6409FC0083EBC7 /* Nano3MRTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3MRTApp.swift; sourceTree = "<group>"; };
 		4B1B4AB62A6409FC0083EBC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -277,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				386C226F2A6990B900141CAC /* Components */,
+				386C22832A6A464B00141CAC /* DestinationPlan.swift */,
+				386C22842A6A464B00141CAC /* Route.swift */,
 				386C226D2A694E8F00141CAC /* StartTripScreenView.swift */,
 			);
 			path = Views;
@@ -440,6 +446,7 @@
 				386C226E2A694E8F00141CAC /* StartTripScreenView.swift in Sources */,
 				386C222F2A66A4FA00141CAC /* Array+Extension.swift in Sources */,
 				386C227B2A69914B00141CAC /* HomeView.swift in Sources */,
+				386C22862A6A464B00141CAC /* Route.swift in Sources */,
 				386C22462A6757EE00141CAC /* FacilityCategory.swift in Sources */,
 				386C22382A66ADC200141CAC /* GetUserLocationUseCase.swift in Sources */,
 				386C22512A67A3A100141CAC /* GetNearestStationToDestinationUseCase.swift in Sources */,
@@ -467,6 +474,7 @@
 				386C222A2A669FCE00141CAC /* Coordinate.swift in Sources */,
 				386C22562A67A54100141CAC /* GetNavigationUseCase.swift in Sources */,
 				386C223A2A66B75400141CAC /* TrainRoute.swift in Sources */,
+				386C22852A6A464B00141CAC /* DestinationPlan.swift in Sources */,
 				386C223C2A67443D00141CAC /* Point.swift in Sources */,
 				386C22712A6990D900141CAC /* InlineTextFieldView.swift in Sources */,
 			);
