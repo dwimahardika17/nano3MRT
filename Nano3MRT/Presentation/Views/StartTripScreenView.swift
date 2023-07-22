@@ -18,11 +18,11 @@ struct StartTripScreenView: View {
     var body: some View {
         ZStack {
             if isShowStartTrip {
-                StartTripView(effectId: effectId,
+                DestinationPlan(effectId: effectId,
                               animation: animation,
                               isShowStartTrip: $isShowStartTrip)
             } else {
-                HomeView(
+                ContentView(
                     effectId: effectId,
                     animation: animation,
                     isShowStartTrip: $isShowStartTrip
