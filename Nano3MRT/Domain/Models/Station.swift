@@ -21,7 +21,10 @@ import Foundation
 
  - SeeAlso: `Coordinate`, `Navigation`, `Gate`, `TrainStop`, `Place`
  */
-struct Station {
+struct Station: Identifiable {
+    /// The unique identifier of the station.
+    var id: UUID
+    
     /// The name of the train station.
     var name: String
     
@@ -32,28 +35,32 @@ struct Station {
     var coordinate: Coordinate?
     
     /// The navigations representing routes and steps within the train station.
-    var navigations: [Navigation]
+    var navigations: [Navigation]?
     
     /// The entrance gates of the train station.
-    var entranceGates: [Gate]
+    var entranceGates: [Placemark]?
     
     /// The exit gates of the train station.
-    var exitGates: [Gate]
+    var exitGates: [Placemark]?
     
     /// The train stops within the train station.
-    var trainStops: [TrainStop]
+    var trainStops: [Placemark]?
     
     /// The nearby places around the train station.
-    var nearbyPlaces: [Place] {
-        var places = [Place]()
-        entranceGates.forEach { gate in
+    var nearbyPlaces: [Placemark] {
+        var places = [Placemark]()
+        entranceGates?.forEach { gate in
             gate.nearbyPlaces.forEach { places.append($0) }
         }
-        exitGates.forEach { gate in
+        exitGates?.forEach { gate in
             gate.nearbyPlaces.forEach { places.append($0) }
         }
         return places.uniqued()
     }
 }
 
-extension Station: DistanceMeasurable {}
+extension Station: DistanceMeasurable, Equatable {
+    static func == (lhs: Station, rhs: Station) -> Bool {
+        lhs.id == rhs.id
+    }
+}

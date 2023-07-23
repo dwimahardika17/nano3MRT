@@ -1,0 +1,600 @@
+[
+    {
+      "collection_type": "gates",
+      "collection_group": {
+        "key": "station_id",
+        "value": "0ce23e76-7e38-4d4e-b1c5-d74c3a2e3d2b",
+        "details": "Blok M BCA"
+      },
+      "features": [
+        {
+          "id": "a44c95f1-6a1e-49f5-9d14-5e98ecf0b28a",
+          "station_id": "0ce23e76-7e38-4d4e-b1c5-d74c3a2e3d2b",
+          "train_route_id": null,
+          "name": "Blok M BCA - Gate A",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "pedestrian",
+                "folding-bike",
+                "bike"
+              ],
+              "facilities": [
+                "stairs"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.245195784967321,
+            "longitude": 106.79800258837193
+          },
+          "image_urls": [],
+          "accessibilities": [
+            "pedestrian",
+            "folding-bike",
+            "bike"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "eae8904c-5460-4297-9cf9-9f240b074b43",
+          "station_id": "0ce23e76-7e38-4d4e-b1c5-d74c3a2e3d2b",
+          "train_route_id": null,
+          "name": "Blok M BCA - Gate B",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "pedestrian",
+                "folding-bike"
+              ],
+              "facilities": [
+                "escalator"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.244197267590675,
+            "longitude": 106.79797338621138
+          },
+          "image_urls": [],
+          "accessibilities": [
+            "pedestrian",
+            "folding-bike"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "f66ecff2-8696-45a1-8991-3a65b3de1b79",
+          "station_id": "0ce23e76-7e38-4d4e-b1c5-d74c3a2e3d2b",
+          "train_route_id": null,
+          "name": "Blok M BCA - Gate C",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "pedestrian",
+                "folding-bike"
+              ],
+              "facilities": [
+                "stairs"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.243926759985911,
+            "longitude": 106.797929992971
+          },
+          "image_urls": [],
+          "accessibilities": [
+            "pedestrian",
+            "folding-bike"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "13a64fc9-2384-434a-a7c7-8b746ed9dd12",
+          "station_id": "0ce23e76-7e38-4d4e-b1c5-d74c3a2e3d2b",
+          "train_route_id": null,
+          "name": "Blok M BCA - Gate D",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "pedestrian",
+                "folding-bike",
+                "bike"
+              ],
+              "facilities": [
+                "stairs"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.245061930418849,
+            "longitude": 106.79826827003585
+          },
+          "image_urls": [],
+          "accessibilities": [
+            "pedestrian",
+            "folding-bike",
+            "bike"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "fa3b5e44-4197-4e62-a4f6-e5c786163b45",
+          "station_id": "0ce23e76-7e38-4d4e-b1c5-d74c3a2e3d2b",
+          "train_route_id": null,
+          "name": "Blok M BCA - Gate E",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "pedestrian",
+                "folding-bike"
+              ],
+              "facilities": [
+                "stairs",
+                "escalator"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.243692065308378,
+            "longitude": 106.79851481880176
+          },
+          "image_urls": [],
+          "accessibilities": [
+            "pedestrian",
+            "folding-bike"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "05e34398-1bf0-46c1-8ea5-c3727e5ee1eb",
+          "station_id": "0ce23e76-7e38-4d4e-b1c5-d74c3a2e3d2b",
+          "train_route_id": null,
+          "name": "Blok M BCA - Gate F",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "pedestrian",
+                "folding-bike"
+              ],
+              "facilities": [
+                "stairs"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.243553018467786,
+            "longitude": 106.7982912657245
+          },
+          "image_urls": [],
+          "accessibilities": [
+            "pedestrian",
+            "folding-bike"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "997c358a-e0ed-42aa-bfcd-01dbdd672d0d",
+          "station_id": "0ce23e76-7e38-4d4e-b1c5-d74c3a2e3d2b",
+          "train_route_id": null,
+          "name": "Blok M BCA - Lift near Gate C",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "folding-bike",
+                "wheelchair"
+              ],
+              "facilities": [
+                "lift"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.243815396505327,
+            "longitude": 106.7979681338212
+          },
+          "image_urls": [],
+          "accessibilities": [
+            "folding-bike",
+            "wheelchair"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "43cf0ce0-34de-47c1-b587-781f0c36a2e1",
+          "station_id": "0ce23e76-7e38-4d4e-b1c5-d74c3a2e3d2b",
+          "train_route_id": null,
+          "name": "Blok M BCA - Lift near Gate E",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "folding-bike",
+                "wheelchair"
+              ],
+              "facilities": [
+                "lift"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.243838155380418,
+            "longitude": 106.79835806485849
+          },
+          "image_urls": [],
+          "accessibilities": [
+            "folding-bike",
+            "wheelchair"
+          ],
+          "nearby_places": []
+        }
+      ]
+    },
+    {
+      "collection_type": "gates",
+      "collection_group": {
+        "key": "station_id",
+        "value": "d3d08372-1357-401a-8cd8-47ea6159e1df",
+        "details": "Dukuh Atas BNI"
+      },
+      "features": [
+        {
+          "id": "ebd6d0d9-7ebe-44bd-acc4-a396780bf168",
+          "station_id": "d3d08372-1357-401a-8cd8-47ea6159e1df",
+          "train_route_id": null,
+          "name": "Dukuh Atas BNI - Gate A",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "pedestrian",
+                "folding-bike"
+              ],
+              "facilities": [
+                "stairs",
+                "escalator"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.201859775874044,
+            "longitude": 106.82233769130106
+          },
+          "image_urls": [],
+          "accessibilities": [
+            "pedestrian",
+            "folding-bike"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "b84cef76-3e4c-4d38-a42c-47ba6efd7a76",
+          "station_id": "d3d08372-1357-401a-8cd8-47ea6159e1df",
+          "train_route_id": null,
+          "name": "Dukuh Atas BNI - Gate B",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "pedestrian",
+                "folding-bike"
+              ],
+              "facilities": [
+                "escalator"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.201137875451366,
+            "longitude": 106.8224964609675
+          },
+          "accessibilities": [
+              "pedestrian",
+              "folding-bike"
+          ],
+          "image_urls": [],
+          "nearby_places": []
+        },
+        {
+          "id": "cfa631da-c7f8-4b06-b6c6-b482eef48c57",
+          "station_id": "d3d08372-1357-401a-8cd8-47ea6159e1df",
+          "train_route_id": null,
+          "name": "Dukuh Atas BNI - Gate C",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "pedestrian",
+                "folding-bike"
+              ],
+              "facilities": [
+                "stairs"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.200486545731095,
+            "longitude": 106.82263100680267
+          },
+          "image_urls": [],
+          "accessibilities": [
+              "pedestrian",
+              "folding-bike"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "d87a4c76-1647-41c5-8e65-2eb16a5b97c3",
+          "station_id": "d3d08372-1357-401a-8cd8-47ea6159e1df",
+          "train_route_id": null,
+          "name": "Dukuh Atas BNI - Gate D",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "pedestrian",
+                "folding-bike"
+              ],
+              "facilities": [
+                "stairs",
+                "escalator"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.2019175658898416,
+            "longitude": 106.82260646871495
+          },
+          "image_urls": [],
+          "accessibilities": [
+              "pedestrian",
+              "folding-bike"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "db14b738-33e9-48d7-a7a6-c9463381af2d",
+          "station_id": "d3d08372-1357-401a-8cd8-47ea6159e1df",
+          "train_route_id": null,
+          "name": "Dukuh Atas BNI - Gate E",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "pedestrian",
+                "folding-bike"
+              ],
+              "facilities": [
+                "stairs",
+                "escalator"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.200488545619707,
+            "longitude": 106.82289118106378
+          },
+          "image_urls": [],
+          "accessibilities": [
+              "pedestrian",
+              "folding-bike"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "dc18e56b-3dae-431e-a09e-bf1c981bdd25",
+          "station_id": "d3d08372-1357-401a-8cd8-47ea6159e1df",
+          "train_route_id": null,
+          "name": "Dukuh Atas BNI - Lift near Gate B",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "wheelchair",
+                "folding-bike"
+              ],
+              "facilities": [
+                "lift"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.200801440868053,
+            "longitude": 106.82260340040797
+          },
+          "image_urls": [],
+          "accessibilities": [
+            "pedestrian",
+            "folding-bike"
+          ],
+          "nearby_places": []
+        },
+        {
+          "id": "c8c452ac-e5a8-466f-812b-1191b9243ead",
+          "station_id": "d3d08372-1357-401a-8cd8-47ea6159e1df",
+          "train_route_id": null,
+          "name": "Dukuh Atas BNI - Lift near Gate D",
+          "alt_name": null,
+          "annotation_title": null,
+          "annotation_subtitle": null,
+          "annotation_description": null,
+          "category": "gate",
+          "navigation_direction": {
+            "entrance": {
+              "icon_url": "",
+              "direction": {
+                "en": "",
+                "id": ""
+              },
+              "accessibilities": [
+                "wheelchair",
+                "folding-bike"
+              ],
+              "facilities": [
+                "lift"
+              ]
+            },
+            "exit": null
+          },
+          "coordinate": {
+            "latitude": -6.201510114184267,
+            "longitude": 106.82264368276356
+          },
+          "image_urls": [],
+          "accessibilities": [
+              "pedestrian",
+              "folding-bike"
+          ],
+          "nearby_places": []
+        }
+      ]
+    }
+]

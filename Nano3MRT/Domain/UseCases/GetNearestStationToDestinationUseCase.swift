@@ -8,19 +8,19 @@
 import Foundation
 
 protocol GetNearestStationToDestinationUseCase {
-    func execute() -> Station?
+    func execute(completion: @escaping (_ station: Station?, _ exitGate: Placemark?) -> Void)
 }
 
 class DefaultGetNearestStationToDestinationUseCase: GetNearestStationToDestinationUseCase {
     
     private var repository: StationRepository
     
-    init(repository: StationRepository) {
+    init(repository: StationRepository = DefaultStationRepository()) {
         self.repository = repository
     }
     
-    func execute() -> Station? {
-        return nil
+    func execute(completion: @escaping (_ station: Station?, _ exitGate: Placemark?) -> Void) {
+        
     }
     
 }

@@ -1,0 +1,126 @@
+{
+  "collection_type": "stations",
+  "features": [
+    {
+      "id": "aaffd60d-e1c1-4468-ab46-d7d21ea4d703",
+      "name": "Lebak Bulus Grab",
+      "address": "Jalan Lebak Bulus Raya 38, Lebak Bulus, Cilandak, 12440 Jakarta Selatan, Jakarta Indonesia",
+      "coordinate": {
+        "longitude": 106.77494,
+        "latitude": -6.28927
+      }
+    },
+    {
+      "id": "9c499d96-6443-4623-8043-c5d8be47119e",
+      "name": "Fatmawati Indomaret",
+      "address": "Jalan Raden Ajeng Kartini, Cilandak Barat, Cilandak, 12430 Jakarta Selatan, Jakarta Indonesia",
+      "coordinate": {
+        "longitude": 106.79246,
+        "latitude": -6.29245
+      }
+    },
+    {
+      "id": "6b9662c2-46b5-48f4-8d9e-54186d26fc01",
+      "name": "Cipete Raya",
+      "address": "Jalan RS Fatmawati 15, Cipete Selatan, Cilandak, 12410 Jakarta Selatan, Jakarta Indonesia",
+      "coordinate": {
+        "longitude": 106.797350,
+        "latitude": -6.278347
+      }
+    },
+    {
+      "id": "7123b4eb-6829-4353-ac1c-6db2f4fefaa0",
+      "name": "Haji Nawi",
+      "address": "Jalan RS Fatmawati 33, Cipete Selatan, Cilandak, 12410 Jakarta Selatan, Jakarta Indonesia",
+      "coordinate": {
+        "longitude": 106.797302,
+        "latitude": -6.267134
+      }
+    },
+    {
+      "id": "3718c0bf-fc8b-4536-af78-c441122f969d",
+      "name": "Blok A",
+      "address": "Jalan RS Fatmawati 58, Pulo, Kebayoran Baru, 12160 Jakarta Selatan, Jakarta Indonesia",
+      "coordinate": {
+        "longitude": 106.797119,
+        "latitude": -6.255792
+      }
+    },
+    {
+      "id": "0ce23e76-7e38-4d4e-b1c5-d74c3a2e3d2b",
+      "name": "Blok M BCA",
+      "address": "Jalan Panglima Polim Raya 116, Melawai, Kebayoran Baru Jakarta Selatan, Jakarta, 12160 Indonesia",
+      "coordinate": {
+        "longitude": 106.798149,
+        "latitude": -6.244423
+      }
+    },
+    {
+      "id": "4785126d-f95b-41d5-b390-5467f75a9857",
+      "name": "ASEAN",
+      "address": "Jalan Sisingamangaraja 12, Gunung, Kebayoran Baru Jakarta Selatan, Jakarta, 12120 Indonesia",
+      "coordinate": {
+        "longitude": 106.798439,
+        "latitude": -6.234355
+      }
+    },
+    {
+      "id": "b406b6f3-dada-4d36-bc59-f09f63331ec4",
+      "name": "Senayan",
+      "address": "Jalan Jenderal Sudirman, Senayan, Kebayoran Baru Jakarta Selatan, Jakarta, 12190 Indonesia",
+      "coordinate": {
+        "longitude": 106.801958,
+        "latitude": -6.227230
+      }
+    },
+    {
+      "id": "503857bf-542b-4bc9-abd3-5f2ccc7d39f6",
+      "name": "Istora Mandiri",
+      "address": "Jalan Jenderal Sudirman Kav. 200 Kelurahan Senayan, Kecamatan Kebayoran Baru Kota Jakarta Selatan 12190 Indonesia",
+      "coordinate": {
+        "longitude": 106.80859,
+        "latitude": -6.22236
+      }
+    },
+    {
+      "id": "421ff6ce-8482-443f-b059-245c26a3591e",
+      "name": "Bendungan Hilir",
+      "address": "Jalan Jenderal Sudirman Karet Tengsin, Tanah Abang Karet Semanggi, Setiabudi Jakarta Pusat 10220 Jakarta Selatan 12930 Indonesia",
+      "coordinate": {
+        "longitude": 106.817748,
+        "latitude": -6.215163
+      },
+      "navigations": [],
+      "entrance_gates": [],
+      "exit_gates": [],
+      "train_stops": []
+    },
+    {
+      "id": "d66f8031-a38a-4b73-bcdc-9497f60c2a42",
+      "name": "Setiabudi Astra",
+      "address": "Jalan Jenderal Sudirman Kav. 21, Setiabudi, Setiabudi Jakarta Selatan, Jakarta, 12910 Indonesia",
+      "coordinate": {
+        "longitude": 106.821721,
+        "latitude": -6.209088
+      }
+    },
+    {
+      "id": "d3d08372-1357-401a-8cd8-47ea6159e1df",
+      "name": "Dukuh Atas BNI",
+      "address": "Jalan Tanjung Karang, Menteng, Menteng Jakarta Pusat, Jakarta, 10310 Indonesia",
+      "coordinate": {
+        "longitude": 106.822793,
+        "latitude": -6.200800
+      }
+    },
+    {
+      "id": "84630120-97c5-4d88-ba18-f579e0784e28",
+      "name": "Bundaran HI",
+      "address": "Jalan Mohammad Husni Thamrin Kav. 17-136, Gondangdia, Menteng Jakarta Pusat, Jakarta, 10350 Indonesia",
+      "coordinate": {
+        "longitude": 106.822702,
+        "latitude": -6.193409
+      }
+    }
+  ]
+}

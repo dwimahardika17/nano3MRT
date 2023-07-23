@@ -11,15 +11,14 @@ struct PulsableIconView: View {
     
     let imageSystemName: String
     let color: Color
-    
     @Binding var isEditing: Bool
-    @Binding var animate: Bool
+    @State private var animate: Bool = false
     
     var body: some View {
         ZStack {
             Image(systemName: imageSystemName)
                 .font(.system(size: 22, weight: .medium))
-                .foregroundStyle(.white, isEditing ? color : Color.gray)
+                .foregroundStyle(.white, color)
                 .zIndex(10)
                 .animation(.easeIn, value: isEditing)
             

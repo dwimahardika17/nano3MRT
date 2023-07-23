@@ -5,117 +5,33 @@
 //  Created by Muhammad Rizki Ardyan on 18/07/23.
 //
 
-import CoreLocation
+import Foundation
 
 /**
- The LocationManager protocol defines methods and properties that a location manager should implement.
- It provides functionality for starting and stopping location updates and has a delegate to receive location updates and authorization changes.
+ The `LocationManager` protocol defines methods and properties that a location manager should implement.
+ It provides functionality for obtaining and updating the user's location and reverse geocoding to get placemark information based on the current coordinate.
+ 
+ - Note: `LocationManager` serves as an abstraction over Core Location services, allowing different implementations to handle location-related tasks.
+ 
  */
 protocol LocationManager: AnyObject {
-    /// The delegate to receive location manager events.
-    var delegate: LocationManagerDelegate? { get set }
     
-    /// Starts updating the user's location.
-    func startUpdate()
-    
-    /// Stops updating the user's location.
-    func stopUpdate()
-}
-
-/**
- Manages location services and provides updates to the delegate.
- 
- The `DefaultLocationManager` class is responsible for managing location services and delivering location updates to the delegate. It provides methods for requesting authorization, starting and stopping location updates, and stores the current location.
- 
- Usage:
- let locationManager = LocationManager()
- locationManager.delegate = self
- locationManager.requestAuthorization()
- locationManager.start()
- 
- - Note: The `DefaultLocationManager` class relies on the CoreLocation framework.
- 
- - SeeAlso: `LocationManagerDelegate`
- */
-class DefaultLocationManager: NSObject, LocationManager {
-    
-    /// The delegate to receive location manager events.
-    weak var delegate: LocationManagerDelegate?
-    
-    /// The current user's location.
-    var location: CLLocation?
-    
-    /// A boolean value indicating whether location updates are enabled.
-    var enabled: Bool = false
-    
-    /// The CLLocationManager instance responsible for managing location updates.
-    private let manager: CLLocationManager
+    /// The current user's location coordinate.
+    var coordinate: Coordinate? { get }
     
     /**
-     Initializes a DefaultLocationManager instance with an optional CLLocationManager.
-     If not provided, a default instance will be used with best accuracy settings.
+     Updates the current user's location asynchronously.
      
-     - Parameter locationManager: The CLLocationManager to use for managing location updates.
-     (Default: CLLocationManager())
+     - Parameter completion: A closure to be executed once the location update is complete. It contains the updated user's coordinate if available, or `nil` if the location update failed or was denied by the user.
      */
-    init(locationManager: CLLocationManager = CLLocationManager()) {
-        manager = locationManager
-        manager.desiredAccuracy = kCLLocationAccuracyBest
-        super.init()
-        manager.delegate = self
-        requestAuthorization()
-    }
+    func updateDeviceLocation(completion: @escaping (Coordinate?) -> Void)
     
     /**
-     Requests the user's authorization for location services.
-     It enables background location updates.
+     Retrieves the placemark information based on the given coordinate asynchronously.
+     
+     - Parameter currentCoordinate: The coordinate for which to get the placemark information.
+     - Parameter completion: A closure to be executed once the placemark retrieval is complete. It contains the placemark information associated with the given coordinate, or `nil` if the retrieval failed or no placemark was found for the coordinate.
      */
-    private func requestAuthorization() {
-        manager.requestWhenInUseAuthorization()
-    }
+    func getPlacemark(in coordinate: Coordinate, completion: @escaping (Placemark?) -> Void)
     
-    /**
-     Starts updating the user's location.
-     */
-    func startUpdate() {
-        manager.startUpdatingLocation()
-    }
-    
-    /**
-     Stops updating the user's location.
-     */
-    func stopUpdate() {
-        manager.stopUpdatingLocation()
-    }
-    
-    func lookUpCurrentLocation(_ currentLocation: CLLocation? = nil, completionHandler: @escaping (CLPlacemark?) -> Void ) {
-        if let location = currentLocation ?? self.location {
-            let geocoder = CLGeocoder()
-            
-            geocoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) in
-                if error == nil {
-                    let firstLocation = placemarks?[0]
-                    completionHandler(firstLocation)
-                } else {
-                    completionHandler(nil)
-                }
-            })
-        } else {
-            completionHandler(nil)
-        }
-    }
-}
-
-extension DefaultLocationManager: CLLocationManagerDelegate {
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        enabled = manager.authorizationStatus == .authorizedAlways
-        delegate?.didChangeAuthorization(manager.authorizationStatus)
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let firstLocation = locations.first {
-            location = firstLocation
-        }
-        delegate?.didUpdateLocations(locations)
-    }
 }

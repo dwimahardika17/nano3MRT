@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Nano3MRTApp: App {
+    let navigationViewModel = NavigationViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(navigationViewModel)
         }
     }
 }
