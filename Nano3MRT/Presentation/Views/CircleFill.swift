@@ -9,7 +9,10 @@ import SwiftUI
 
 struct CircleFill: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("arrowDown")
+            .resizable()
+            .frame(width: 10,height: 10)
+            .padding(.leading,18)
     }
 }
 

@@ -10,49 +10,208 @@ import SwiftUI
 struct DestinationPlan: View {
     @State private var currentLocation = ""
     @State private var destinationLocation = ""
+    
+    
+    let recommendation = [
+        RoutesRecommendation(id: 1,departureStation: "Blok M BCA", arrivalStation: "Bundaran HI", departureGate: "Gate A", arrivalGate: "Gate B", preferences: "No Preferences"),
+        RoutesRecommendation(id: 2,departureStation: "Bundaran HI", arrivalStation: "Blok M BCA", departureGate: "Gate A", arrivalGate: "Gate B", preferences: "Wheelchair"),
+        RoutesRecommendation(id:3,departureStation: "Blok M BCA", arrivalStation: "Bundaran HI", departureGate: "Gate A", arrivalGate: "Gate B", preferences: "Bicycle")
+    ]
+    
+    let effectId: String
+    
+    let animation: Namespace.ID
+    
+    @Binding var isShowStartTrip: Bool
+    
+    @State var departureQuery: String = ""
+    
+    @State var destinationQuery: String = ""
+    
+    // MARK: Editing
+    
+    @State var isEditDeparture: Bool = false {
+        didSet {
+            editDepartureAnimate = isEditDeparture
+        }
+    }
+    
+    @State var editDepartureAnimate: Bool = true
+    
+    @State var isEditDestination: Bool = false {
+        didSet {
+            editDestinationAnimate = isEditDestination
+        }
+    }
+    
+    @State var editDestinationAnimate: Bool = true
     var body: some View {
-        VStack{
-            HStack{
-                Text("MRT J")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                Spacer()
-                VStack {
-                    Text("1000 PTS")
-                        .padding(4)
+        VStack(alignment: .leading){
+            VStack {
+                NavigationBarView(isShowStartTrip: $isShowStartTrip)
+                
+                HStack {
+                    VStack {
+                        PulsableIconView(imageSystemName: "flag.circle.fill", color: Color("Primary"), isEditing: $isEditDeparture, animate: $editDepartureAnimate)
+                        
+                        NavigationVerticalDivider()
+                        
+                        PulsableIconView(imageSystemName: "mappin.circle.fill", color: Color("Secondary"), isEditing: $isEditDestination, animate: $editDestinationAnimate)
+                            .matchedGeometryEffect(id: effectId + "icon", in: animation)
+                    }
+                    
+                    VStack(spacing: 0) {
+                        InlineTextFieldView(text: $departureQuery, placeholder: "Search for a location...", isFirstResponder: false) { isEditing in
+                            isEditDeparture = isEditing
+                        }
+                        
+                        Divider()
+                        
+                        InlineTextFieldView(text: $destinationQuery, placeholder: "Search for a destination...", isFirstResponder: true) { isEditing in
+                            isEditDestination = isEditing
+                        }
+                    }
                 }
-                .background(Color.gray.opacity(0.5))
-                .cornerRadius(8)
-                Image(systemName: "bell")
-                Image(systemName: "questionmark.circle")
+                .padding(.horizontal)
+                .background(Color.white)
+                .cornerRadius(12)
+                .shadow(radius: 30)
+                .matchedGeometryEffect(id: effectId + "textfield", in: animation)
+            }
+            .padding(.horizontal)
+            .background(alignment: .top) {
+                Rectangle()
+                    .foregroundColor(Color("Primary"))
+                    .frame(height: 160)
+                    .edgesIgnoringSafeArea(.top)
+                    .matchedGeometryEffect(id: effectId + "background",
+                                           in: animation,
+                                           anchor: .top,
+                                           isSource: false)
+            }
+            HStack{
+                Spacer()
+                HStack {
+                    HStack {
+                        Image(systemName: "slider.horizontal.3")
+                        Text("Preferences")
+                    }
+                    .padding(.all,10)
+                }
+                .background(.white)
+                .cornerRadius(10)
+                .shadow(radius: 1)
+            }
+            .padding(.trailing)
+            VStack(alignment: .leading){
+                Text("No Preference")
+                    .foregroundColor(Color("DestinationCard"))
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .padding(.horizontal)
+                NavigationLink{
+                    Route()
+                } label: {
+                    VStack {
+                        ForEach(recommendation, id: \.id) { recommendation in
+                            if recommendation.preferences == "No Preferences" {
+                                PlanCard(recommendation: recommendation)
+                                
+                            }
+                        }
+                    }
+                }
+                .foregroundColor(.black)
+                Divider()
+                    .padding()
+                Text("WheelChair")
+                    .foregroundColor(Color("DestinationCard"))
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .padding(.horizontal)
+                NavigationLink{
+                    Route()
+                } label: {
+                    VStack {
+                        ForEach(recommendation, id:\.id) { recommendation in
+                            if recommendation.preferences == "Wheelchair"{
+                                PlanCard(recommendation: recommendation)
+                            }
+                        }
+                    }
+                }
+                .foregroundColor(.black)
+                Divider()
+                    .padding()
+                Text("Bicycle")
+                    .foregroundColor(Color("DestinationCard"))
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .padding(.horizontal)
+                NavigationLink{
+                    Route()
+                } label: {
+                    VStack {
+                        ForEach(recommendation, id:\.id) { recommendation in
+                            if recommendation.preferences == "Bicycle"{
+                                PlanCard(recommendation: recommendation)
+                            }
+                        }
+                    }
+                }
+                .foregroundColor(.black)
+            }
+            
+            Spacer()
+        }
+        .background(
+            Image("Background2")
+                .resizable()
+                .ignoresSafeArea()
+        )
+        .navigationBarBackButtonHidden(true) // Hide the default back button
+        .navigationBarItems(leading: MyBackButton())
+    }
+}
+
+struct MyBackButton: View {
+    @Environment(\.presentationMode) var presentationMode
+    
+    var body: some View {
+        Button(action: {
+            presentationMode.wrappedValue.dismiss()
+        }) {
+            HStack {
+                Image(systemName: "chevron.left") // Set the custom back icon here
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.white)
+                    .padding(.leading)
+                Spacer()
+                Text("MRT Navigation")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                Spacer()
             }
             .padding(.all)
-            HStack{
-                VStack{
-                    Image(systemName: "target")
-                        .padding(.bottom)
-                    Image(systemName: "mappin")
-                }
-                .padding(.vertical)
-                .padding(.leading)
-                VStack(alignment: .leading){
-                    Text("Current Location")
-                    Divider()
-                    TextField("Destination Location", text: $destinationLocation)
-//                    Text("Destination Location")
-                }
-                .padding(.trailing)
-            }
-            .background(Color.gray.opacity(0.2))
-            .cornerRadius(8)
-            .padding(.horizontal)
-            Spacer()
+            .padding(.bottom)
+            .frame(width: 400)
         }
     }
 }
 
-struct DestinationPlan_Previews: PreviewProvider {
-    static var previews: some View {
-        DestinationPlan()
-    }
+struct RoutesRecommendation{
+    var id: Int
+    var departureStation: String
+    var arrivalStation: String
+    var departureGate: String
+    var arrivalGate: String
+    var preferences: String
 }
+
+//struct DestinationPlan_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DestinationPlan()
+//    }
+//}
+
