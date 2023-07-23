@@ -9,54 +9,36 @@ import SwiftUI
 
 struct RouteView: View {
     
+    @State private var isDepartureExpanded = false
+    @State private var isArrivalExpanded = false
     @State private var isExpanded = false
+    let stations = [
+        StationsName(name: "Bendungan Hilir"),
+        StationsName(name: "Station 2"),
+        StationsName(name: "Station 3")
+    ]
+    
+    let routes = [
+        RoutesDummy(id: 1,routes: "Entrances Gate A", routesIcon: "turnLeft", routesImage: "Rectangle"),
+        RoutesDummy(id: 2,routes: "Turn left to Family Mart", routesHint: "Near Family Mart" ,routesIcon: "uturnRight", routesImage: "Rectangle")
+    ]
+    
+    let departureStation = DepartureStatition(stationName: "Stasiun Bendungan Hilir", gate: "Gate A", hint: "Near Sampoerna Office", gateIcon: "gateF")
+    
+    let arrivalStation = ArrivalStation(stationName: "Stasiun Dukuh Atas", gate: "Gate B", hint: "Near Family Mart", image: "Rectangle", gateIcon: "gateD")
+    
+    @State private var selectedDepartureStation: StationsName?
+    @State private var selectedArrivalStation: StationsName?
     
     var body: some View {
         VStack(alignment: .leading){
-            HStack{
-                VStack(alignment: .center){
-                    Text("departure station")
-                    HStack{
-                        DisclosureGroup{
-                            Text("Bendungan Hilir")
-                            Text("Bendungan Hilir")
-                            Text("Bendungan Hilir")
-                        } label: {
-                            Text("Bendungan Hilir")
-                        }
-                        .padding(.horizontal)
-                    }
-                    .frame(width: 150)
-                    .foregroundColor(Color.black)
-                    .background(Color.gray.opacity(0.5))
-                    .cornerRadius(10)
-                }
-                Spacer()
-                VStack(alignment: .center){
-                    Text("departure station")
-                    HStack{
-                        DisclosureGroup{
-                            Text("Bundaran HI")
-                            Text("Bendungan HI")
-                            Text("Bendungan HI")
-                        } label: {
-                            Text("Bundaran HI")
-                        }
-                        .padding(.horizontal)
-                    }
-                    .frame(width: 150)
-                    .foregroundColor(Color.black)
-                    .background(Color.gray.opacity(0.5))
-                    .cornerRadius(10)
-                }
-            }
-            .padding(.all)
             VStack(alignment: .leading) {
                 HStack(alignment: .bottom){
                     HStack(alignment: .bottom){
-                        Image(systemName: "target")
+                        Image(systemName: "location.circle.fill")
                             .resizable()
                             .frame(width: 15,height: 15)
+                            .foregroundColor(Color("Secondary"))
                     }
                     VStack(alignment: .leading){
                         Text("Start From")
@@ -64,112 +46,160 @@ struct RouteView: View {
                         Text("Current Location")
                     }
                 }
+                .foregroundColor(Color("DestinationCard"))
                 .padding(.horizontal)
-                Image(systemName: "circle.fill")
-                    .resizable()
-                    .frame(width: 10,height: 10)
-                    .opacity(0.3)
-                    .padding(.leading,18)
-                HStack(alignment: .top){
-                    VStack(alignment: .leading){
-                        Image(systemName: "target")
+                CircleFill()
+                VStack(alignment: .leading){
+                    HStack{
+                        Image(systemName: "tram.circle.fill")
                             .resizable()
                             .frame(width: 30, height: 30)
+                            .foregroundColor(Color("Primary"))
+                        Text(departureStation.stationName)
+                            .fontWeight(.bold)
+                        Spacer()
                     }
                     .padding(.top)
-                    VStack(alignment: .leading){
-                        Text("Stasiun Bendungan Hilir")
-                            .fontWeight(.bold)
-                        HStack{
-                            Image(systemName: "arrow.up")
-                            Text("Entrance Gate A | near Sampoerna Office")
+                    .padding(.leading)
+                    HStack{
+                        Image(departureStation.gateIcon)
+                            .resizable()
+                            .frame(width: 30, height: 40)
+                            .foregroundColor(Color.orange)
+                        VStack(alignment: .leading) {
+                            Text(departureStation.gate)
+                                .font(.caption)
+                                .fontWeight(.bold)
+                            Text(departureStation.hint)
                                 .font(.caption)
                         }
-                        .padding(.trailing)
                     }
-                    .padding(.trailing)
-                    .padding(.vertical)
+                    .padding(.leading)
+                    .padding(.bottom)
                 }
-                .frame(maxWidth: .infinity)
-                .background(Color.gray.opacity(0.5))
-                .cornerRadius(10)
-                .padding(.horizontal)
+                .customCardStyle()
                 
-                Image(systemName: "circle.fill")
-                    .resizable()
-                    .frame(width: 10,height: 10)
-                    .opacity(0.3)
-                    .padding(.leading,18)
+                CircleFill()
                 HStack{
-                    Image(systemName: "target")
+                    Image(systemName: "tram.circle.fill")
                         .resizable()
                         .frame(width: 15,height: 15)
                     Text("2 Station stops")
-                }
-                .padding(.horizontal)
-                Image(systemName: "circle.fill")
-                    .resizable()
-                    .frame(width: 10,height: 10)
-                    .opacity(0.3)
-                    .padding(.leading,18)
-                DisclosureGroup{
-                    HStack{
-                        Image(systemName: "arrow.uturn.right")
-                        Text("Turn right to ticketing gate")
-                        Spacer()
-                        Rectangle()
-                            .frame(width: 100, height: 70)
-                    }
-                    .padding(.all)
                         .font(.caption)
-                } label: {
-                    HStack(alignment: .top){
-                        VStack(alignment: .leading){
-                            Image(systemName: "target")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                        }
-                        VStack(alignment: .leading){
-                            Text("Stasiun Bendungan Hilir")
-                                .fontWeight(.bold)
+                }
+                .foregroundColor(Color("DestinationCard"))
+                .padding(.horizontal)
+                CircleFill()
+                
+                VStack(alignment: .leading){
+                    HStack{
+                        Image(systemName: "tram.circle.fill")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(Color("Secondary"))
+                        Text(departureStation.stationName)
+                            .fontWeight(.bold)
+                        Spacer()
+                    }
+                    .padding(.top)
+                    .padding(.leading)
+                    DisclosureGroup{
+                        ForEach(routes, id:\.id) { route in
                             HStack{
-                                Image(systemName: "arrow.up")
-                                Text("Entrance Gate A | near Sampoerna Office")
+                                HStack(alignment: .center){
+                                    Image(route.routesIcon)
+                                        .resizable()
+                                        .frame(width: 20,height: 35)
+                                    VStack(alignment: .leading) {
+                                        Text(route.routes)
+                                            .font(.caption)
+                                            .fontWeight(.bold)
+                                        Text(route.routesHint ?? "")
+                                            .font(.caption)
+                                    }
+                                    .foregroundColor(Color("DestinationCard"))
+                                }
+                                Spacer()
+                                Image(route.routesImage)
+                                    .resizable()
+                                    .frame(width: 100, height: 70)
+                            }
+                            .padding(.horizontal)
+                            .font(.caption)
+                        }
+                    } label: {
+                        HStack{
+                            Image(arrivalStation.gateIcon)
+                                .resizable()
+                                .frame(width: 30, height: 40)
+                            VStack(alignment: .leading) {
+                                Text(arrivalStation.gate)
+                                    .font(.caption)
+                                    .fontWeight(.bold)
+                                Text(arrivalStation.hint)
                                     .font(.caption)
                             }
+                            Spacer()
+                            Image(arrivalStation.image)
+                                .resizable()
+                                .frame(width: 100, height: 70)
                         }
+                        .padding(.leading)
+                        .padding(.bottom)
                     }
-                    .padding(.horizontal)
-                    .padding(.vertical)
-                    .onTapGesture {
-                        withAnimation {
-                            isExpanded.toggle()
-                        }
+                }
+                .customCardStyle()
+                CircleFill()
+                HStack(alignment: .bottom){
+                    HStack(alignment: .bottom){
+                        Image(systemName: "mappin.circle.fill")
+                            .resizable()
+                            .frame(width: 15,height: 15)
+                            .foregroundColor(Color.orange)
                     }
-                    
+                    VStack(alignment: .leading){
+                        Text("Finnish to")
+                            .font(.caption)
+                        Text("Destination Location")
+                    }
                 }
-                .background(Color.gray.opacity(0.5))
-                .foregroundColor(.black)
-                .cornerRadius(10)
-                .padding(.horizontal)
-                Image(systemName: "circle.fill")
-                    .resizable()
-                    .frame(width: 10,height: 10)
-                    .opacity(0.3)
-                    .padding(.leading,18)
-                HStack{
-                    Image(systemName: "mappin")
-                        .resizable()
-                        .frame(width: 10,height: 20)
-                    Text("Destination Location")
-                }
+                .foregroundColor(Color("DestinationCard"))
                 .padding(.horizontal)
             }
             Spacer()
         }
+        .padding(.vertical)
         
     }
 }
+
+struct StationsName{
+    var name: String
+}
+
+struct RoutesDummy{
+    var id: Int
+    var routes: String
+    var routesHint: String?
+    var routesIcon: String
+    var routesImage: String
+}
+
+struct DepartureStatition{
+    var stationName: String
+    var gate: String
+    var hint: String
+    var gateIcon: String
+}
+
+struct ArrivalStation{
+    var stationName: String
+    var gate: String
+    var hint: String
+    var image: String
+    var gateIcon:String
+}
+
 
 struct Route_Previews: PreviewProvider {
     static var previews: some View {

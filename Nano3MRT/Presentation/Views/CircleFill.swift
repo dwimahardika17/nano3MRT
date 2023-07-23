@@ -2,14 +2,17 @@
 //  CircleFill.swift
 //  Nano3MRT
 //
-//  Created by I MADE DWI MAHARDIKA on 21/07/23.
+//  Created by I MADE DWI MAHARDIKA on 22/07/23.
 //
 
 import SwiftUI
 
 struct CircleFill: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("arrowDown")
+            .resizable()
+            .frame(width: 10,height: 10)
+            .padding(.leading,18)
     }
 }
 

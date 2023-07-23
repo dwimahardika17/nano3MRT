@@ -18,6 +18,7 @@ struct NavigationBarView: View {
                     .font(.system(size: 22, weight: .medium))
                     .onTapGesture {
                         withAnimation(.spring()) {
+                            hideKeyboard()
                             isShowStartTrip.toggle()
                         }
                     }

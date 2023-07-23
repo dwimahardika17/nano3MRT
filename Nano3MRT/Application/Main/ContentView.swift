@@ -9,10 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @Namespace var animation
+    let effectId = "smooth-transition"
     
     @State var isShowStartTrip: Bool = false
-    
-    let effectId = "smooth-transition"
     
     var body: some View {
         ZStack {
