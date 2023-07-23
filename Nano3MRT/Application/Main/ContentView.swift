@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var searchLocation = ""
-    let effectId: String
     
-    let animation: Namespace.ID
+    @Namespace var animation
     
-    @Binding var isShowStartTrip: Bool
+    @State var isShowStartTrip: Bool = false
+    
+    let effectId = "smooth-transition"
     
     var body: some View {
         NavigationView {
@@ -130,6 +131,5 @@ struct ContentView: View {
                 .ignoresSafeArea()
             )
         }
-        
     }
 }

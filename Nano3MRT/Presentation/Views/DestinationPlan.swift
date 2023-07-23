@@ -54,7 +54,7 @@ struct DestinationPlan: View {
                     VStack {
                         PulsableIconView(imageSystemName: "flag.circle.fill", color: Color("Primary"), isEditing: $isEditDeparture, animate: $editDepartureAnimate)
                         
-                        NavigationVDevider()
+                        NavigationVerticalDivider()
                         
                         PulsableIconView(imageSystemName: "mappin.circle.fill", color: Color("Secondary"), isEditing: $isEditDestination, animate: $editDestinationAnimate)
                             .matchedGeometryEffect(id: effectId + "icon", in: animation)

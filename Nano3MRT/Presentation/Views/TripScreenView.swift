@@ -1,5 +1,5 @@
 //
-//  StartTripScreenView.swift
+//  TripScreenView.swift
 //  Nano3MRT
 //
 //  Created by Muhammad Rizki Ardyan on 20/07/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StartTripScreenView: View {
+struct TripScreenView: View {
     
     @Namespace var animation
     
@@ -18,11 +18,11 @@ struct StartTripScreenView: View {
     var body: some View {
         ZStack {
             if isShowStartTrip {
-                DestinationPlan(effectId: effectId,
+                InputTripView(effectId: effectId,
                               animation: animation,
                               isShowStartTrip: $isShowStartTrip)
             } else {
-                ContentView(
+                HomeView(
                     effectId: effectId,
                     animation: animation,
                     isShowStartTrip: $isShowStartTrip
@@ -34,6 +34,6 @@ struct StartTripScreenView: View {
 
 struct StartTripScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        StartTripScreenView()
+        TripScreenView()
     }
 }

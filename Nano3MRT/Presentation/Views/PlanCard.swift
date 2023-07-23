@@ -2,7 +2,7 @@
 //  PlanCard.swift
 //  Nano3MRT
 //
-//  Created by I MADE DWI MAHARDIKA on 21/07/23.
+//  Created by I MADE DWI MAHARDIKA on 22/07/23.
 //
 
 import SwiftUI

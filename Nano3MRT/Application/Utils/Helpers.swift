@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import MapKit
 
 struct Helpers {
     static func lineDistanceBetweenCoordinates(from coordinateA: Coordinate, to coordinateB: Coordinate) -> Distance {
@@ -28,5 +29,30 @@ struct Helpers {
     
     static func createCoordinateFromCL(_ clCoordinate: CLLocationCoordinate2D) -> Coordinate {
         Coordinate(latitude: clCoordinate.latitude, longitude: clCoordinate.longitude)
+    }
+    
+    static func address(_ placemark: MKPlacemark) -> String {
+        var address: String = ""
+        
+        if let thoroughfare = placemark.thoroughfare {
+            address += thoroughfare
+            
+            if let subThoroughfare = placemark.subThoroughfare {
+                address += " " + subThoroughfare
+                
+                if let locality = placemark.locality {
+                    address += ", " + locality
+                }
+            }
+        } else if let locality = placemark.locality {
+            address += locality
+            
+            if let country = placemark.country {
+                address += ", " + country
+            }
+        } else if let country = placemark.country {
+            address += country
+        }
+        return address
     }
 }
